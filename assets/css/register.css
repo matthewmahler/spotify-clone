@@ -1,0 +1,155 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+#background {
+  background-color: #000000;
+  background-image: url("../images/backgrounds/nainoa-shizuru-80385-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  display: table;
+  height: 100vh;
+  width: 100vw;
+}
+
+#loginContainer * {
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1em;
+  box-sizing: border-box;
+}
+
+#loginContainer {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1024px;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #ffffff;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ffffff;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ffffff;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #ffffff;
+}
+
+#inputContainer {
+  width: 400px;
+  padding: 45px;
+  float: left;
+  border-right: 1px solid #999;
+}
+
+#inputContainer h2 {
+  text-align: center;
+}
+
+#inputContainer input[type="text"],
+#inputContainer input[type="email"],
+#inputContainer input[type="password"] {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #ffffff;
+  height: 27px;
+  line-height: 27px;
+  width: 100%;
+}
+
+#inputContainer label {
+  color: #a0a0a0;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+#inputContainer button {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 250px;
+  color: white;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 20px auto;
+  height: 41px;
+  width: 100%;
+}
+
+#inputContainer button:hover {
+  cursor: pointer;
+}
+
+.hasAccountText span {
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.hasAccountText {
+  text-align: center;
+}
+
+#registerForm,
+#loginForm {
+  display: none;
+}
+
+#loginContainer #loginText {
+  padding: 45px;
+  display: table-cell;
+}
+
+#loginContainer #loginText h1 {
+  color: #07d590;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#loginContainer #loginText h2 {
+  margin: 35px 0;
+}
+
+#loginContainer #loginText ul {
+  padding: 0;
+}
+
+#loginContainer #loginText li {
+  font-size: 20px;
+  list-style-type: none;
+  padding: 5px 30px;
+  background: url("../images/icons/Checkmark_25px.png") no-repeat 0 0;
+}
+
+#inputContainer .errorMessage {
+  color: #07d590;
+  font-size: 12px;
+  display: block;
+}

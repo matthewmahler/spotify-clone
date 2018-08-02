@@ -9,4 +9,8 @@ class Constants
     public static $lastNameLength = "Your last name must be between 5 and 25 characters";
     public static $emailsDoNotMatch = "Your emails don't match";
     public static $invaildEmails = "Invalid Email";
+    public static $emailTaken = "This email has already been used";
+    public static $usernameTaken = "This username already exists";
+
+    public static $loginFailed = "Login attempt failed";
 }
