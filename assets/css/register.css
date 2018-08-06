@@ -7,7 +7,7 @@ body {
 
 #background {
   background-color: #000000;
-  background-image: url("../images/backgrounds/nainoa-shizuru-80385-unsplash.jpg");
+  background-image: url("../images/backgrounds/mohammad-metri-421904-unsplash.jpg");
   background-position: center;
   background-size: cover;
   display: table;
@@ -24,7 +24,7 @@ body {
 
 #loginContainer {
   width: 80%;
-  margin: 0 auto;
+  margin: 20% auto 0;
   position: relative;
   max-width: 1024px;
 }
@@ -88,6 +88,7 @@ body {
   color: #a0a0a0;
   font-size: 13px;
   margin-top: 15px;
+  display: block;
 }
 
 #inputContainer button {
@@ -148,7 +149,7 @@ body {
   background: url("../images/icons/Checkmark_25px.png") no-repeat 0 0;
 }
 
-#inputContainer .errorMessage {
+#loginContainer #inputContainer .errorMessage {
   color: #07d590;
   font-size: 12px;
   display: block;
