@@ -142,6 +142,17 @@ div.progressBar {
   font-size: 12px;
 }
 
+.trackNamePlayer {
+  margin: 6px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.artistNamePlayer {
+  color: #a0a0a0;
+  font-size: 12px;
+}
+
 .volumeBar {
   width: 180px;
   position: absolute;
@@ -316,9 +327,11 @@ div.progressBar {
   position: absolute;
   cursor: pointer;
 }
+
 .trackListRow:hover .trackCount img {
   visibility: visible;
 }
+
 .trackListRow:hover .trackCount span {
   visibility: hidden;
 }
@@ -332,6 +345,7 @@ div.progressBar {
   margin-bottom: 7px;
   color: #fff;
 }
+
 .trackListRow .trackInfo span {
   display: block;
 }
