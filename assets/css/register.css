@@ -1,156 +1,143 @@
-html,
+html, 
 body {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
+	padding: 0;
+	margin: 0;
+	height: 100%;
 }
 
 #background {
-  background-color: #000000;
-  background-image: url("../images/backgrounds/mohammad-metri-421904-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  display: table;
-  height: 100vh;
-  width: 100vw;
+	background-color: #000;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
 }
 
 #loginContainer * {
-  color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1em;
-  box-sizing: border-box;
+	color: #fff;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-weight: normal;
+	line-height: 1em;
+	box-sizing: border-box;
 }
 
 #loginContainer {
-  width: 80%;
-  margin: 20% auto 0;
-  position: relative;
-  max-width: 1024px;
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	max-width: 1024px;
 }
 
-::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
-  color: #ffffff;
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
 }
-
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #ffffff;
-  opacity: 1;
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
 }
-
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #ffffff;
-  opacity: 1;
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
 }
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #ffffff;
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
 }
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #ffffff;
-}
-
-::placeholder {
-  /* Most modern browsers support this now. */
-  color: #ffffff;
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fff;
 }
 
 #inputContainer {
-  width: 400px;
-  padding: 45px;
-  float: left;
-  border-right: 1px solid #999;
+    width: 400px;
+    padding: 45px;
+    float: left;
+    border-right: 1px solid #999;
 }
 
 #inputContainer h2 {
-  text-align: center;
+	text-align: center;
 }
 
 #inputContainer input[type="text"],
 #inputContainer input[type="email"],
 #inputContainer input[type="password"] {
-  display: block;
-  background-color: transparent;
-  border: 0;
-  border-bottom: 1px solid #ffffff;
-  height: 27px;
-  line-height: 27px;
-  width: 100%;
+	display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
 }
 
 #inputContainer label {
-  color: #a0a0a0;
-  font-size: 13px;
-  margin-top: 15px;
-  display: block;
+	color: #a0a0a0;
+    font-size: 13px;
+    margin-top: 15px;
+    display: block;
 }
 
 #inputContainer button {
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 250px;
-  color: white;
-  display: block;
-  font-size: 14px;
-  letter-spacing: 1px;
-  margin: 20px auto;
-  height: 41px;
-  width: 100%;
+	background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 250px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    height: 41px;
+    width: 100%;
 }
 
 #inputContainer button:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .hasAccountText span {
-  font-weight: bold;
-  font-size: 12px;
-  cursor: pointer;
+	font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
 }
 
 .hasAccountText {
-  text-align: center;
+	text-align: center;
 }
 
 #registerForm,
 #loginForm {
-  display: none;
+	display: none;
 }
 
-#loginContainer #loginText {
-  padding: 45px;
-  display: table-cell;
+#loginText {
+    padding: 45px;
+    display: table-cell;
 }
 
-#loginContainer #loginText h1 {
-  color: #07d590;
-  font-size: 60px;
-  font-weight: bold;
+#loginText h1 {
+    color: #07d159;
+    font-size: 60px;
+    font-weight: bold;
 }
 
-#loginContainer #loginText h2 {
-  margin: 35px 0;
+#loginText h2 {
+    margin: 35px 0;
 }
 
-#loginContainer #loginText ul {
-  padding: 0;
+#loginText ul {
+    padding: 0;
 }
 
-#loginContainer #loginText li {
-  font-size: 20px;
-  list-style-type: none;
-  padding: 5px 30px;
-  background: url("../images/icons/Checkmark_25px.png") no-repeat 0 0;
+#loginText li {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 5px 30px;
+    background: url(../images/icons/checkmark.png) no-repeat 0 0;
 }
 
-#loginContainer #inputContainer .errorMessage {
-  color: #07d590;
-  font-size: 12px;
-  display: block;
+#inputContainer .errorMessage {
+    color: #07d159;
+    font-size: 12px;
+    display: block;
 }
