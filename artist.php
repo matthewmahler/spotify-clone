@@ -57,7 +57,11 @@ foreach ($songIdArray as $songId) {
 					</div>
 
 					<div class='trackOptions'>
-						<img class='optionsButton' src='assets/images/icons/more.png'>
+					<input type='hidden' class='songId'
+					value='" . $albumSong->getId() . "'>
+					</input>
+						<img
+						class='optionsButton' src='assets/images/icons/more.png' onclick='showOptionsMenu(this)'>
 					</div>
 
 					<div class='trackDuration'>
@@ -101,3 +105,9 @@ while ($row = mysqli_fetch_array($albumQuery)) {
 ?>
 
 </div>
+
+<nav class='optionsMenu'>
+	<input type="hidden" class='songId'>
+<?php echo Playlist::getPlaylistDropdown($con, $userLoggedIn->getUsername()) ?>
+
+</nav>

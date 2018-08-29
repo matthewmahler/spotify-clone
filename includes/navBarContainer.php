@@ -1,3 +1,6 @@
+
+
+
 <div id="navBarContainer">
 	<nav class="navBar">
 
@@ -27,7 +30,9 @@
 			</div>
 
 			<div class="navItem">
-				<span role="link" tabindex="0" onclick="openPage('profile.php')" class="navItemLink">Matt Mahler</span>
+				<span role="link" tabindex="0" onclick="openPage('settings.php')" class="navItemLink">
+				<?php echo $userLoggedIn->getName(); ?>
+				</span>
 			</div>
 		</div>
 

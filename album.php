@@ -1,10 +1,9 @@
-<?php include("includes/includedFiles.php"); 
+<?php include "includes/includedFiles.php";
 
-if(isset($_GET['id'])) {
-	$albumId = $_GET['id'];
-}
-else {
-	header("Location: index.php");
+if (isset($_GET['id'])) {
+    $albumId = $_GET['id'];
+} else {
+    header("Location: index.php");
 }
 
 $album = new Album($con, $albumId);
@@ -29,17 +28,17 @@ $artist = $album->getArtist();
 
 <div class="tracklistContainer">
 	<ul class="tracklist">
-		
+
 		<?php
-		$songIdArray = $album->getSongIds();
+$songIdArray = $album->getSongIds();
 
-		$i = 1;
-		foreach($songIdArray as $songId) {
+$i = 1;
+foreach ($songIdArray as $songId) {
 
-			$albumSong = new Song($con, $songId);
-			$albumArtist = $albumSong->getArtist();
+    $albumSong = new Song($con, $songId);
+    $albumArtist = $albumSong->getArtist();
 
-			echo "<li class='tracklistRow'>
+    echo "<li class='tracklistRow'>
 					<div class='trackCount'>
 						<img class='play' src='assets/images/icons/play-white.png' onclick='setTrack(\"" . $albumSong->getId() . "\", tempPlaylist, true)'>
 						<span class='trackNumber'>$i</span>
@@ -52,7 +51,11 @@ $artist = $album->getArtist();
 					</div>
 
 					<div class='trackOptions'>
-						<img class='optionsButton' src='assets/images/icons/more.png'>
+					<input type='hidden' class='songId'
+					value='" . $albumSong->getId() . "'>
+					</input>
+						<img
+						class='optionsButton' src='assets/images/icons/more.png' onclick='showOptionsMenu(this)'>
 					</div>
 
 					<div class='trackDuration'>
@@ -62,10 +65,10 @@ $artist = $album->getArtist();
 
 				</li>";
 
-			$i = $i + 1;
-		}
+    $i = $i + 1;
+}
 
-		?>
+?>
 
 		<script>
 			var tempSongIds = '<?php echo json_encode($songIdArray); ?>';
@@ -74,3 +77,9 @@ $artist = $album->getArtist();
 
 	</ul>
 </div>
+
+<nav class='optionsMenu'>
+	<input type="hidden" class='songId'>
+<?php echo Playlist::getPlaylistDropdown($con, $userLoggedIn->getUsername()) ?>
+
+</nav>
